@@ -16,12 +16,12 @@ public class Main {
 
         var entityManager = sessionFactory.createEntityManager();
 
-        // Repositoriess
+
         final GenreRepository genreRepository = new GenreRepository(entityManager);
         final ActorRepository actorRepository = new ActorRepository(entityManager);
         final MovieRepository movieRepository = new MovieRepository(entityManager);
 
-        // Example usage
+
         Genre genre = new Genre(null, "Action", null);
         genreRepository.save(genre);
 
