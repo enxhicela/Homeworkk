@@ -16,7 +16,7 @@ public class Main {
 
         var entityManager = sessionFactory.createEntityManager();
 
-        // Repositories
+        // Repositoriess
         final GenreRepository genreRepository = new GenreRepository(entityManager);
         final ActorRepository actorRepository = new ActorRepository(entityManager);
         final MovieRepository movieRepository = new MovieRepository(entityManager);
